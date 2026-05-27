@@ -5,12 +5,17 @@
 Deposer le CSV Kaggle dans `data/raw/tripadvisor_hotel_reviews.csv`
 (source : https://www.kaggle.com/datasets/andrewmvd/trip-advisor-hotel-reviews).
 
+## Installation
+
+```
+pip install uv
+uv sync
+```
+
 ## Lancer
 
 ```
-docker compose build
-docker compose up
+uv run jupyter lab
 ```
 
-Puis ouvrir http://localhost:8888 et le notebook
-`notebooks/tripadvisor_classification.ipynb`.
+Puis ouvrir le notebook `notebooks/tripadvisor_classification.ipynb`.
